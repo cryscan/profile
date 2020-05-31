@@ -31,7 +31,7 @@
 %%------------------------------------------------------------------------------
 \begin{document}
 \makecvtitle
-	
+
 \section{Education}
 %\cventry{year--year}{Degree}{Institution}{City}{ \textit{Grade} }{Description}  % arguments 3 to 6 can be left empty
 \cventry{Sep. 2019 -- Present}
@@ -40,7 +40,7 @@
 {Ann Arbor}
 {GPA 4.0 out of 4.0}
 {Major in Computer Science \\
-\cvitem{Core courses}{Computer Architecture, Data Structures and Algorithms, Operating Systems, Compiler Construction}}
+	\cvitem{Core courses}{Computer Architecture, Data Structures and Algorithms, Operating Systems, Compiler Construction}}
 
 \cventry{Sep. 2017 -- Present}
 {Bachelor of Science}
@@ -48,42 +48,42 @@
 {Shanghai}
 {GPA 3.6 out of 4.0}
 {Major in Electronic and Computer Engineering \\
-\cvitem{A level courses}{Engineering Probabilistic Methods, Differential Equations, Linear Algebra, Discrete Mathmetics}}
+	\cvitem{A level courses}{Engineering Probabilistic Methods, Differential Equations, Linear Algebra, Discrete Mathmetics}}
 
 \section{Experience}
+\cventry{May 2020 -- present}
+{Research Assistant}
+{ARM Lab}
+{}{}
+{Implemented baseline algorithm based on \texttt{Guided Policy Search} for the Lab's novel model-based learning algorithm}
+
 \cventry{Sep. 2019 -- Dec. 2019}
 {Unity Programmer}
-{WolverineSoft Studio Long Term Project}
+{WolverineSoft Studio Game Project}
 {}{}
-{A top-down 2D twin-stick shooter made by the University of Michigan's video game development club
-\begin{itemize}
-\item Worked over the course of one semester with a team of 30 developers
-\item Implemented the projectile system
-\end{itemize}}
+{A 2D platformer made by the University of Michigan's video game development club,
+	featuring difficult platforming, tense combat, a high level of mobility granted to the player though teleportation abilities
+	\begin{itemize}
+		\item Worked over the course of one semester with a team of 30 developers
+		\item Implemented the platformer player controller and save/load system
+		\item Maintained the code base of procedure animation
+	\end{itemize}
+}
 
 \cventry{Nov. 2018 -- Apr. 2019}{Student}{Undergraduate Research Program}{}{}
 {\cvitem{Spring 2019}{Proof of Convergence of Quantile Q-learning}
-A variant of Q-learning that does not need quantified reward, but relative orders instead
-\begin{itemize}
-\item Proved with stochastic approximation technique
-\end{itemize}}
-{\cvitem{Fall 2018}{Evaluation of Algorithms for Deep Reinforcement Learning}
-\begin{itemize}
-\item Set up an unified environment that integrates different algorithms and scenarios
-\item Implemented reinforcement learning algorithms including \texttt{PPO}, \texttt{DDPG} and \texttt{PILCO} in \texttt{TensorFlow}
-\item Implemented a benchmarking procedure for algorithm evaluating
-\end{itemize}
+	A variant of Q-learning that does not need quantified reward, but relative orders instead
+	\begin{itemize}
+		\item Proved with stochastic approximation technique
+	\end{itemize}
 }
-
-\cventry{Sep. 2018 -- Aug. 2019}
-{Member}
-{Student Science and Technology Innovation Association}
-{}{}
-{A students' association for sharing advanced technologies
-\begin{itemize}
-	\item Held workshops on computer graphics 
-	\item Topics covered: \texttt{OpenGL}, rendering pipeline, transforms
-\end{itemize}}
+{\cvitem{Fall 2018}{Evaluation of Algorithms for Deep Reinforcement Learning}
+	\begin{itemize}
+		\item Set up an unified environment that integrates different algorithms and scenarios
+		\item Implemented reinforcement learning algorithms including \texttt{PPO}, \texttt{DDPG} and \texttt{PILCO} in \texttt{TensorFlow}
+		\item Implemented a benchmarking procedure for algorithm evaluating
+	\end{itemize}
+}
 
 \section{Activities and Honors}
 \cventry{Mar. 2018 -- Apr. 2018}
@@ -94,12 +94,10 @@ A variant of Q-learning that does not need quantified reward, but relative order
 
 \section{Computer Skills}
 \cvitem{Programming Languages}{
-\begin{itemize}
-	\item \cvitem{\texttt{C++}}{Have knowledge and skill of RAII, multi-threading and template metaprogramming}
-	\item \cvitem{\texttt{Rust}}{Understand ownership, lifetime and type traits}
-	\item \cvitem{\texttt{Python}}{Train reinforcement learning agents; Do plot drawing}
-	\item \cvitem{\texttt{Pie}}{Dependent typed functional language as theorem prover}
-\end{itemize}}
+	\begin{itemize}
+		\item \cvitem{\texttt{C++}}{Have knowledge and skill of RAII, multi-threading and template metaprogramming}
+		\item \cvitem{\texttt{Rust}}{Understand ownership, lifetime and type traits; Can write procedure macros}
+		\item \cvitem{\texttt{Python}}{Train reinforcement learning agents; Do plot drawing}	\end{itemize}}
 \cvitem{Tools}{\texttt{Git}}
 \cvitem{Game Engines}{\texttt{Unity} (\texttt{C\#}), \texttt{Amethyst} (\texttt{Rust})}
 \cvitem{Assets Creating}{\texttt{Blender} for 3D modeling and animating}
