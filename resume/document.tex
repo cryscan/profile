@@ -20,7 +20,7 @@
 %% Personal data
 \firstname{Zhenyuan}
 \familyname{Zhang}
-\title{Resume}
+%\title{Resume}
 %\address{Room 1601, No.12, 665 Dongchangzhi Road}{Shanghai, 200080}
 \address{5C, 1811 Willowtree Ln, Ann Arbor}{Michigan, 48105}
 \mobile{+1~(734)~882~3816}
@@ -34,72 +34,94 @@
 
 \section{Education}
 %\cventry{year--year}{Degree}{Institution}{City}{ \textit{Grade} }{Description}  % arguments 3 to 6 can be left empty
-\cventry{Sep. 2019 -- Present}
-{Bachelor of Science}
+\cventry{Sep. 2019 -- May 2021}
+{Bachelor of Science in Computer Science}
 {University of Michigan}
 {Ann Arbor}
 {GPA 4.0 out of 4.0}
-{Major in Computer Science \\
-	\cvitem{Core courses}{Computer Architecture, Data Structures and Algorithms, Operating Systems, Compiler Construction}}
+{\cvitem{Core courses}{Computer Architecture, Data Structures and Algorithms, Operating Systems, Compiler Construction}}
 
-\cventry{Sep. 2017 -- Present}
-{Bachelor of Science}
+\cventry{Sep. 2017 -- Aug. 2021}
+{Bachelor of Science in Electronic and Computer Engineering}
 {University of Michigan -- Shanghai Jiao Tong University Joint Institute}
 {Shanghai}
 {GPA 3.6 out of 4.0}
-{Major in Electronic and Computer Engineering \\
-	\cvitem{A level courses}{Engineering Probabilistic Methods, Differential Equations, Linear Algebra, Discrete Mathmetics}}
+{\cvitem{Core courses}{Engineering Probabilistic Methods, Differential Equations, Linear Algebra, Discrete Mathmetics}}
 
-\section{Experience}
+\section{Experience And Activities}
+\cventry{October 2020 -- present}
+{Designer and Programmer}
+{Stealth Game Project}
+{}{}
+{A course project for University of Michigan's game developing course
+	\begin{itemize}
+		\item Designed core mechanism focused on planning and executing a heist
+		\item Implemented the basic code architecture
+		\item Implemented enemy AI with complex but reasonable behavior using \texttt{Goal Oriented Action Planning}
+		\item Tried to do narrative generation using planning algorithms
+	\end{itemize}
+}
+
 \cventry{May 2020 -- present}
 {Research Assistant}
-{ARM Lab}
+{Research in ARM Lab on Trap Aware Model Predictive Control}
 {}{}
-{Implemented baseline algorithm based on \texttt{Guided Policy Search} for the Lab's novel model-based learning algorithm}
+{An online model-based controller for escaping traps in novel environments
+	\begin{itemize}
+		\item Implemented baseline based on \texttt{Guided Policy Search}
+		\item Implemented baseline based on \texttt{Soft Actor-Critic}
+	\end{itemize}
+}
 
-\cventry{Sep. 2019 -- Dec. 2019}
+\cventry{June. 2020 -- August. 2020}
 {Unity Programmer}
 {WolverineSoft Studio Game Project}
 {}{}
-{A 2D platformer made by the University of Michigan's video game development club,
-	featuring difficult platforming, tense combat, a high level of mobility granted to the player though teleportation abilities
+{A 3D first-person stealth horror game where the player must traverse through a castle avoiding horrible monsters
 	\begin{itemize}
 		\item Worked over the course of one semester with a team of 30 developers
-		\item Implemented the platformer player controller and save/load system
-		\item Maintained the code base of procedure animation
+		\item Generated enemy animations using trajectory optimization
+		\item Implemented an easy-to-use interacting system
+		\item Implemented dialogue system for narrative purpose
+	\end{itemize}
+}
+
+\cventry{May. 2020 -- June 2020}
+{Leader}
+{Procedural Animation Project}
+{}{}
+{A 3D cat locomotion generation demo written in \texttt{Rust}
+	\begin{itemize}
+		\item Utilized Entity-Component-System architecture
+		\item Implemented IK system based on CCDIK algorithm
+		\item Implemented gait generation inspired from biological Central Pattern Generator
 	\end{itemize}
 }
 
 \cventry{Nov. 2018 -- Apr. 2019}{Student}{Undergraduate Research Program}{}{}
-{\cvitem{Spring 2019}{Proof of Convergence of Quantile Q-learning}
-	A variant of Q-learning that does not need quantified reward, but relative orders instead
-	\begin{itemize}
-		\item Proved with stochastic approximation technique
-	\end{itemize}
-}
-{\cvitem{Fall 2018}{Evaluation of Algorithms for Deep Reinforcement Learning}
+{{Evaluation of Algorithms for Deep Reinforcement Learning}
 	\begin{itemize}
 		\item Set up an unified environment that integrates different algorithms and scenarios
-		\item Implemented reinforcement learning algorithms including \texttt{PPO}, \texttt{DDPG} and \texttt{PILCO} in \texttt{TensorFlow}
+		\item Implemented reinforcement learning algorithms including \texttt{PPO} and \texttt{DDPG} in \texttt{TensorFlow}
 		\item Implemented a benchmarking procedure for algorithm evaluating
 	\end{itemize}
 }
 
-\section{Activities and Honors}
-\cventry{Mar. 2018 -- Apr. 2018}
-{Team Leader}
-{The 10th SJTU Mechanical Innovation Competition for Freshmen}
-{}{Entered the second round}
-{A college-level competition in robot designing}
+% \section{Activities and Honors}
+% \cventry{Mar. 2018 -- Apr. 2018}
+% {Team Leader}
+% {The 10th SJTU Mechanical Innovation Competition for Freshmen}
+% {}{Entered the second round}
+% {A college-level competition in robot designing}
 
 \section{Computer Skills}
 \cvitem{Programming Languages}{
 	\begin{itemize}
-		\item \cvitem{\texttt{C++}}{Have knowledge and skill of RAII, multi-threading and template metaprogramming}
-		\item \cvitem{\texttt{Rust}}{Understand ownership, lifetime and type traits; Can write procedure macros}
-		\item \cvitem{\texttt{Python}}{Train reinforcement learning agents; Do plot drawing}	\end{itemize}}
-\cvitem{Tools}{\texttt{Git}}
+		\item \cvitem{\texttt{C++}}{Have good coding style; Have experience in projects of multiple disciplines}
+		\item \cvitem{\texttt{Rust}}{Understand ownership, lifetime and type traits; Have experience in projects}
+		\item \cvitem{\texttt{Python}}{Can implement machine learning algorithms and train agents}
+	\end{itemize}}
 \cvitem{Game Engines}{\texttt{Unity} (\texttt{C\#}), \texttt{Amethyst} (\texttt{Rust})}
-\cvitem{Assets Creating}{\texttt{Blender} for 3D modeling and animating}
+% \cvitem{Assets Creating}{\texttt{Blender} for 3D modeling and animating}
 
 \end{document}
