@@ -1,0 +1,126 @@
+\documentclass[10pt, a4paper, sans]{moderncv}
+
+%% ModernCV themes
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+\renewcommand{\familydefault}{\sfdefault}
+\nopagenumbers{}
+
+%% Character encoding
+\usepackage[utf8]{inputenc}
+\usepackage[UTF8]{ctex}
+
+%% Adjust the page margins
+\usepackage[scale=0.75]{geometry}
+\geometry{top=2.0cm, bottom=2.0cm}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+% \lhead{\textbf{Program: Computer Science and Engineering Ph.D. \\ U-M ID: 98197295}}
+
+%% Personal data
+\firstname{张}
+\familyname{震元}
+\title{简历}
+%\address{Room 1601, No.12, 665 Dongchangzhi Road}{Shanghai, 200080}
+\address{5C, 1811 Willowtree Ln, Ann Arbor}{Michigan, 48105}
+\mobile{+1~(734)~882~3816}
+\email{cryscan@umich.edu}
+
+%%------------------------------------------------------------------------------
+%% Content
+%%------------------------------------------------------------------------------
+\begin{document}
+\makecvtitle
+
+\section{教育背景}
+%\cventry{year--year}{Degree}{Institution}{City}{ \textit{Grade} }{Description}  % arguments 3 to 6 can be left empty
+\cventry{2019年9月 -- 2021年5月}
+{计算机科学学士}
+{密歇根大学安娜堡分校}
+{安娜堡}
+{GPA 3.9 out of 4.0}
+{\cvitem{核心课程}{计算机体系结构、数据结构与算法、操作系统、编译原理、游戏开发}}
+
+\cventry{2017年9月 -- 2021年8月}
+{电子与计算机工程学士}
+{上海交通大学}
+{上海}
+{GPA 3.6 out of 4.0}
+{\cvitem{核心课程}{工程随机方法、微分方程、线性代数、离散数学}}
+
+\section{个人经历}
+\cventry{2021年1月 -- 至今}
+{个人项目}
+{计算机生成动画}
+{}{}
+{密歇根大学自主研究项目，将机器人学中的动作生成运用于角色动画中
+	\begin{itemize}
+		\item 为轨迹规划算法软件 \texttt{towr} 实现了 \texttt{C++} 接口
+		\item 使用轨迹规划方法生成包含角色控制点动画片段的数据库
+		\item 将生成的控制点动作根据用户输入实时绑定在游戏角色上，并补全其全身动画
+	\end{itemize}
+}
+
+\cventry{2020年10月 -- 2020年12月}
+{设计、程序}
+{游戏 《The Inside Man》}
+{}{}
+{密歇根大学游戏开发课程项目
+	\begin{itemize}
+		\item 设计了一套基于“规划-执行”的核心玩法
+		\item 设计了项目的代码架构
+		\item 使用 \texttt{Goal Oriented Action Planning} 实现AI的复杂逻辑
+	\end{itemize}
+}
+
+\cventry{2020年5月 -- 至今}
+{研究助理}
+{Trap Aware Model Predictive Control}
+{}{}
+{一种在线的、基于模型的控制算法，能在其未曾见过的环境中逃脱
+	\begin{itemize}
+		\item 实现了基于 \texttt{Guided Policy Search} 的 baseline
+		\item 实现了基于 \texttt{Soft Actor-Critic} 的 baseline
+	\end{itemize}
+}
+
+\cventry{2020年6月 -- 2020年8月}
+{程序}
+{WolverineSoft Studio 社团独立游戏 《Desolation Place》}
+{}{}
+{一款第一人称恐怖潜行游戏
+	\begin{itemize}
+		\item 由社团30人合作完成
+		\item 使用轨迹优化方法生成敌人爬行动画
+		\item 实现所有玩家与环境物品交互
+		\item 实现叙事系统
+	\end{itemize}
+}
+
+\cventry{2018年11月 -- 2019年4月}{学生}{本科生科研项目}{}{}
+{{评估深度强化学习算法}
+	\begin{itemize}
+		\item 搭建了一个统一的环境来比较各种强化学习算法
+		\item 设计并实现了一套自动化的评估、比较流程
+	\end{itemize}
+}
+
+% \section{Activities and Honors}
+% \cventry{Mar. 2018 -- Apr. 2018}
+% {Team Leader}
+% {The 10th SJTU Mechanical Innovation Competition for Freshmen}
+% {}{Entered the second round}
+% {A college-level competition in robot designing}
+
+\section{计算机技术}
+\cvitem{编程语言}{
+	\begin{itemize}
+		\item \cvitem{\texttt{C++}}{最为熟悉的语言，有良好的编码风格；有多个项目的使用经验}
+		\item \cvitem{\texttt{C\#}}{在 \texttt{Unity} 引擎中使用;有多个项目的使用经验}
+		\item \cvitem{\texttt{Rust}}{理解所有权，生命周期等概念；有项目经验}
+	\end{itemize}}
+\cvitem{游戏引擎}{\texttt{Unity}, \texttt{Amethyst}}
+% \cvitem{Assets Creating}{\texttt{Blender} for 3D modeling and animating}
+
+\end{document}
