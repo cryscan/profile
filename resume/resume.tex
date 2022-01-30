@@ -39,14 +39,14 @@
 {University of Michigan}
 {Ann Arbor}
 {}
-{}
+{\cvitem{Core courses}{Parallel Computing}}
 
 \cventry{Sep. 2019 -- May 2021}
 {Bachelor of Science in Computer Science}
 {University of Michigan}
 {Ann Arbor}
 {GPA 3.8 out of 4.0}
-{\cvitem{Core courses}{Computer Architecture, Data Structures and Algorithms, Operating Systems, Compiler Construction, Game Development}}
+{\cvitem{Core courses}{Computer Architecture, Data Structures and Algorithms, Operating Systems, Compiler Construction, Game Development, Robotics Kinematics and Dynamics}}
 
 \cventry{Sep. 2017 -- Aug. 2021}
 {Bachelor of Science in Electronic and Computer Engineering}
@@ -55,16 +55,28 @@
 {GPA 3.6 out of 4.0}
 {\cvitem{Core courses}{Engineering Probabilistic Methods, Differential Equations, Linear Algebra, Discrete Mathmetics}}
 
-\section{Experience And Activities}
+\section{Experience}
+\cventry{Dec. 2021 - Jan. 2021}
+{Designer and Programmer}
+{Parallel $A^\star$ Search on GPU}{}{}
+{
+	A research project on paralleling $A^\star$ searching algorithm on a GPU.
+	\begin{itemize}
+		\item Implemented heap, hashtable and memory pool on GPUs in \texttt{CUDA} and \texttt{C++}
+		\item Got an approximately 10x speedup on Quadro RTX 4000 than the single-threaded version on i7 8700
+	\end{itemize}
+}
+
 \cventry{Jan. 2021 -- Apr. 2021}
 {Leader}
 {Procedural Animation Project}
 {}{}
-{A research project seeks to introduce methods of motion synthesis in robotics into animation systems
+{
+	A research project seeks to introduce methods of motion synthesis in robotics into animation systems
 	\begin{itemize}
 		\item Wrote an interface to the trajectory optimization library \texttt{towr} in \texttt{C++}
 		\item Generated a trajectory database for motion matching
-		\item Applied to real-time applications like games
+		\item Applied to real-time game-like applications
 	\end{itemize}
 }
 
@@ -72,10 +84,10 @@
 {Designer and Programmer}
 {Undergraduate Game Development}
 {}{}
-{A course project for University of Michigan's game developing course
+{A game project done by a team of four in one semester with \texttt{Unity Engine}
 	\begin{itemize}
 		\item Designed core mechanism focused on planning and executing
-		\item Designed the code architecture
+		\item Designed the code architecture based on event channels (pub-sub design pattern)
 		\item Implemented enemy AI with complex but reasonable behavior using \texttt{Goal Oriented Action Planning}
 	\end{itemize}
 }
@@ -84,10 +96,11 @@
 {Student Researcher}
 {Research in ARM Lab on Trap Aware Model Predictive Control}
 {}{}
-{An online model-based controller for escaping traps in novel environments
+{
+	An online model-based controller for escaping traps in novel environments
 	\begin{itemize}
-		\item Implemented baseline based on \texttt{Guided Policy Search}
-		\item Implemented baseline based on \texttt{Soft Actor-Critic}
+		\item Implemented baseline based on \texttt{Guided Policy Search} in \texttt{Python}
+		\item Implemented baseline based on \texttt{Soft Actor-Critic} in \texttt{Python}
 	\end{itemize}
 }
 
@@ -108,7 +121,8 @@
 {Student Researcher}
 {Undergraduate Research Program}
 {}{}
-{{Evaluation of Algorithms for Deep Reinforcement Learning}
+{
+	Evaluation of Algorithms for Deep Reinforcement Learning
 	\begin{itemize}
 		\item Set up an unified environment that integrates different algorithms and scenarios
 		\item Implemented reinforcement learning algorithms including \texttt{PPO} and \texttt{DDPG} in \texttt{TensorFlow}
@@ -128,9 +142,9 @@
 	\begin{itemize}
 		\item \cvitem{\texttt{C++}}{Have good coding style; Have experience in multiple projects}
 		\item \cvitem{\texttt{Rust}}{Understand ownership, lifetime and traits; Have project experience}
-		\item \cvitem{\texttt{Python}}{Be able to implement machine learning algorithms and train agents}
+		\item \cvitem{\texttt{Python}}{Implement learning algorithms}
 	\end{itemize}}
-\cvitem{Game Engines}{\texttt{Unity} (\texttt{C\#}), \texttt{Amethyst} (\texttt{Rust}), \texttt{Bevy} (\texttt{Rust})}
+\cvitem{Game Engines}{\texttt{Unity}, \texttt{Bevy} (\texttt{Rust} Game Engine)}
 \cvitem{Others}{\texttt{Git}, \texttt{Jira}, \texttt{Blender}}
 
 \end{document}
