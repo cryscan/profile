@@ -22,9 +22,10 @@
 \firstname{张}
 \familyname{震元}
 \title{}
-%\address{Room 1601, No.12, 665 Dongchangzhi Road}{Shanghai, 200080}
-\address{5C, 1811 Willowtree Ln, Ann Arbor}{Michigan, 48105}
-\mobile{+1~(734)~882~3816}
+\address{东长治路 665 弄 12 号 1601 室}{上海, 200080}
+% \address{Room 1601, No.12, 665 Dongchangzhi Road}{Shanghai, 200080}
+% \address{5C, 1811 Willowtree Ln, Ann Arbor}{Michigan, 48105}
+\mobile{+86~136~0196~7074}
 \email{cryscan@umich.edu}
 \homepage{cryscan.github.io/profile}
 
@@ -57,9 +58,22 @@
 {GPA 3.6 out of 4.0}
 {\cvitem{核心课程}{工程随机方法、微分方程、线性代数、离散数学}}
 
+\section{工作经历}
+\cventry{2023年2月 -- 至今}
+{高级图形工程师}
+{腾讯游戏}
+{}{}
+{
+	MagicDawn：基于OptiX 7的分布式GPU加速光照烘焙系统
+	\begin{itemize}
+		\item 开发了高性能光照烘焙解决方案，服务于包括《洛克王国：世界》在内的十几个游戏项目
+		\item 针对大型开放世界游戏优化了烘焙性能和质量
+	\end{itemize}
+}
+
 \section{项目经历}
 \cventry{2022年1月 -- 2022年2月}
-{程序}
+{程序员}
 {体素光锥跟踪实时全局光照插件}{}{}
 {
 	为开源游戏引擎\texttt{Bevy}开发的全局光照扩展插件
@@ -70,16 +84,6 @@
 	\end{itemize}
 }
 
-\cventry{2021年11月 -- 2022年1月}
-{设计、程序}
-{大规模GPU并行$A^\star$搜索}{}{}
-{
-	一个科研项目,在GPU上实现大规模并行$A^\star$搜索
-	\begin{itemize}
-		\item 使用\texttt{CUDA}实现GPU上的堆、哈希表和内存池
-		\item 在Quadro RTX 4000上取得了和单核i7 8700版本超过10倍的加速
-	\end{itemize}
-}
 \cventry{2021年1月 -- 2021年4月}
 {个人项目}
 {计算机生成动画}
@@ -93,6 +97,43 @@
 	\end{itemize}
 }
 
+\cventry{2020年10月 -- 2020年12月}
+{设计师和程序员}
+{本科游戏开发项目}
+{}{}
+{使用\texttt{Unity引擎}由四人团队在一个学期内完成的游戏项目
+	\begin{itemize}
+		\item 设计了以规划和执行为核心的游戏机制
+		\item 基于事件通道（发布-订阅设计模式）设计了代码架构
+		\item 使用\texttt{目标导向行动规划}实现了具有复杂但合理行为的敌人AI
+	\end{itemize}
+}
+
+\cventry{2020年5月 -- 2021年2月}
+{学生研究员}
+{ARM实验室关于陷阱感知模型预测控制的研究}
+{}{}
+{
+	针对新环境中逃脱陷阱的在线模型预测控制器
+	\begin{itemize}
+		\item 在\texttt{Python}中实现了基于\texttt{引导策略搜索}的基线
+		\item 在\texttt{Python}中实现了基于\texttt{软演员-评论家}的基线
+	\end{itemize}
+}
+
+\cventry{2020年6月 -- 2020年8月}
+{Unity程序员}
+{WolverineSoft工作室游戏项目}
+{}{}
+{一款3D第一人称潜行恐怖游戏，玩家必须在城堡中穿行躲避可怕的怪物
+	\begin{itemize}
+		\item 与30名开发人员团队合作完成一个学期的项目
+		\item 使用轨迹优化创建敌人动画
+		\item 实现了一个易于使用的交互系统
+		\item 为叙事目的实现了对话系统
+	\end{itemize}
+}
+
 % \section{Activities and Honors}
 % \cventry{Mar. 2018 -- Apr. 2018}
 % {Team Leader}
@@ -100,13 +141,15 @@
 % {}{Entered the second round}
 % {A college-level competition in robot designing}
 
-\section{计算机技术}
-\cvitem{编程语言}{
-	\begin{itemize}
-		\item \cvitem{\texttt{C++}}{最为熟悉的语言,有良好的编码风格;有多个项目经验}
-		\item \cvitem{\texttt{Rust}}{理解所有权,生命周期等概念;有项目经验}
-	\end{itemize}}
-\cvitem{游戏引擎}{\texttt{Unity}, \texttt{Bevy} (由\texttt{Rust}编写)}
-\cvitem{其他}{\texttt{Git} (版本控制), \texttt{Jira} (项目管理), \texttt{Blender} (3D建模)}
+% \section{计算机技术}
+% \cvitem{编程语言}{
+% 	\begin{itemize}
+% 		\item \cvitem{\texttt{C++}}{最为熟悉的语言,有良好的编码风格;有多个项目经验}
+% 		\item \cvitem{\texttt{Rust}}{理解所有权,生命周期等概念;有项目经验}
+% 		\item \cvitem{\texttt{Python}}{有项目经验，特别是在机器学习和研究项目中}
+% 	\end{itemize}}
+% \cvitem{游戏引擎}{\texttt{Unity}, \texttt{Bevy} (由\texttt{Rust}编写)}
+% \cvitem{GPU技术}{\texttt{CUDA}, \texttt{OptiX}, \texttt{WebGPU}}
+% \cvitem{其他}{\texttt{Git} (版本控制), \texttt{Jira} (项目管理), \texttt{Blender} (3D建模)}
 
 \end{document}
